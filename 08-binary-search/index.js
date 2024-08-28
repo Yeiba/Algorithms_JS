@@ -1,3 +1,10 @@
+/**
+ * @param {number[]} arr
+ * @param {number} target
+ * @return {number} 
+ */
+
+
 const binarySearch = (arr, target) => {
     let leftIndex = 0
     let rightIndex = arr.length - 1

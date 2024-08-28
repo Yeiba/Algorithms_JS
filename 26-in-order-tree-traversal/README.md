@@ -1,5 +1,13 @@
 # Algorithms - In-order tree traversal
 
+What is Recursion? :
+Recursion is a problem solving technique where the solution depends on solutions to smaller instances of the same problem
+
+Recursion is when a function calls itself
+Why is Recursion? :
+A Great technique to simplify your solution
+ 
+If you find yourself breaking down your problem into smaller versions of the same problem, recursion is very useful.
 
 In-order traversal is a type of depth-first search (DFS) used in binary trees. In In-order traversal, the nodes are recursively visited in this order:
 

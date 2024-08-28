@@ -1,4 +1,10 @@
+/**
+ * @param {number} n
+ * @return {number} 
+ */
+
 const recursiveFactorial = (n) => {
+    // start the funnction with Base case of recursion
     if (n === 0) {
         return 1
     }

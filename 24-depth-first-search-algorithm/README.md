@@ -1,5 +1,13 @@
 # Algorithms - Depth-first search algorithm
 
+What is Recursion? :
+Recursion is a problem solving technique where the solution depends on solutions to smaller instances of the same problem
+
+Recursion is when a function calls itself
+Why is Recursion? :
+A Great technique to simplify your solution
+ 
+If you find yourself breaking down your problem into smaller versions of the same problem, recursion is very useful.
 
 Below is an implementation of the Depth-First Search (DFS) algorithm in JavaScript. DFS is a graph traversal algorithm that starts at a selected node and explores as far as possible along each branch before backtracking.
 

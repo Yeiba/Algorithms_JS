@@ -1,16 +1,15 @@
-class TreeNode {
-    constructor(value) {
-        this.value = value;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 class BinaryTree {
     constructor() {
         this.root = null;
     }
-
+    // Internal Node class
+    static TreeNode = class {
+        constructor(value) {
+            this.value = value;
+            this.left = null;
+            this.right = null;
+        }
+    };
     // Pre-order traversal using an explicit stack (iterative)
     preOrderTraversalIterative() {
         const result = [];
@@ -40,13 +39,13 @@ class BinaryTree {
 // Example usage
 const tree = new BinaryTree();
 
-tree.root = new TreeNode(1);
-tree.root.left = new TreeNode(2);
-tree.root.right = new TreeNode(3);
-tree.root.left.left = new TreeNode(4);
-tree.root.left.right = new TreeNode(5);
-tree.root.right.left = new TreeNode(6);
-tree.root.right.right = new TreeNode(7);
+tree.root = new BinaryTree.TreeNode(1);
+tree.root.left = new BinaryTree.TreeNode(2);
+tree.root.right = new BinaryTree.TreeNode(3);
+tree.root.left.left = new BinaryTree.TreeNode(4);
+tree.root.left.right = new BinaryTree.TreeNode(5);
+tree.root.right.left = new BinaryTree.TreeNode(6);
+tree.root.right.right = new BinaryTree.TreeNode(7);
 
 const preOrderResultIterative = tree.preOrderTraversalIterative();
 console.log("Pre-order Traversal (Iterative):", preOrderResultIterative);
